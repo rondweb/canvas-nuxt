@@ -5,14 +5,14 @@
   "license": "Apache-2.0",
   "scripts": {
     "automd": "automd",
-    "build": "NODE_OPTIONS=--max-old-space-size=12288 nuxt build",
+    "build": "NODE_OPTIONS=--max-old-space-size=12288 npx nuxi build --preset=cloudflare_pages",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "typecheck": "tsc --noEmit",
     "start": "node .output/server/index.mjs",
-    "deploy": "nuxthub deploy",
+    "deploy": "wrangler pages deploy dist/ nuxthub deploy",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
