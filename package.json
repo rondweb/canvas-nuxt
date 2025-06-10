@@ -11,7 +11,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "typecheck": "tsc --noEmit",
-    "start": "node .output/server/index.mjs",
+    "start": "node --max-old-space-size=8192 .output/server/index.mjs",
     "deploy": "wrangler pages deploy dist/ nuxthub deploy",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
