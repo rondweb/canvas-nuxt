@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+  compatibilityDate: '2025-06-09',
   modules: [
     '@vueuse/nuxt',
     '@nuxt/ui',
